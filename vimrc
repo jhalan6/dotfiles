@@ -86,3 +86,5 @@ set fileencodings=ucs-bom,utf-8,gb18030,default
 
 " 剪切板 与系统共享
  set clipboard=unnamed
+" 取消备份。  
+set nobackup  
