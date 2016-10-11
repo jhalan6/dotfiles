@@ -56,15 +56,13 @@ endif
 
 
 " 代码折叠
-set foldenable
-" 折叠方法
+set foldmethod=syntax
 " manual    手工折叠
 " indent    使用缩进表示折叠
 " expr      使用表达式定义折叠
 " syntax    使用语法定义折叠
 " diff      对没有更改的文本进行折叠
 " marker    使用标记进行折叠, 默认标记是 {{{ 和 }}}
-" set foldmethod=syntax
 " 在左侧显示折叠的层次
 "set foldcolumn=4
 
@@ -85,6 +83,8 @@ set fileencodings=ucs-bom,utf-8,gb18030,default
 " gb18030 最好在 UTF-8 前面，否则其它编码的文件极可能被误识为 UTF-8
 
 " 剪切板 与系统共享
- set clipboard=unnamed
+set clipboard=unnamed
 " 取消备份。  
 set nobackup  
+set nowritebackup  
+set noswapfile  
