@@ -1,5 +1,7 @@
 #!/bin/bash
 
+sh ./git.sh
+
 IN_USE_DIR="inUse"
 DIR=$(pwd)
 echo "remove old vimrc files"
