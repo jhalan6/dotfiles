@@ -107,7 +107,7 @@ alias vi="vim"
 alias info="info --vi-keys"
 
 #docker
-alias dockerClearAll="docker rm $(docker ps -a -q)"
+alias dockerClearAll='docker rm $(docker ps -a -q)'
 
 bindkey -v 
 bindkey '^R' history-incremental-search-backward
