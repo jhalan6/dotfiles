@@ -103,6 +103,10 @@ alias pythonFTP="sudo python -m pyftpdlib -p 21"
 #pythonHTTP服务器
 alias pythonHTTP="sudo python -m SimpleHTTPServer 80"
 
+#七牛云上传
+#qimage [name-in-qiniu] [location-in-mac]
+alias qimage="qshell fput cn-jhalancsh-pic"
+
 alias vi="vim"
 alias info="info --vi-keys"
 
