@@ -1,0 +1,6 @@
+{
+    "book":{ "parse": "bookName chapterNum" , "name": "$bookName", "child task": "!python book_child.py $chapterNum", "inbox": false , "sequential": true, "folder":"10000 project","flagged": false},
+    "category":{ "parse": "bookName" , "name": "$bookName", "child task": "$CLIPBOARD", "inbox": false , "sequential": true, "folder":"10000 project","flagged": false},
+    "toread":{ "parse": "link" , "name":"未读链接","inbox": true},
+    "other":{"parse":"project", "name":"$project", "child task":"$CLIPBOARD", "inbox":true}
+}
