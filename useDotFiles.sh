@@ -10,6 +10,7 @@ rm ~/.vimrc
 rm ~/.zshrc
 rm ~/.vimrc.bundles
 rm ~/.tmux.conf
+rm ~/.ideavimrc
 
 echo "create IN_USE_DIR"
 mkdir ${IN_USE_DIR}
@@ -19,12 +20,14 @@ cp vimrc ./${IN_USE_DIR}/.vimrc
 cp vimrc.bundles ./${IN_USE_DIR}/.vimrc.bundles
 cp tmux.conf ./${IN_USE_DIR}/.tmux.conf
 cp zshrc ./${IN_USE_DIR}/.zshrc
+cp ideavimrc ./${IN_USE_DIR}/.ideavimrc
 
 echo "make soft link for vim"
 ln -s ${DIR}/${IN_USE_DIR}/.vimrc ~/.vimrc
 ln -s ${DIR}/${IN_USE_DIR}/.vimrc.bundles ~/.vimrc.bundles
 ln -s ${DIR}/${IN_USE_DIR}/.tmux.conf ~/.tmux.conf
 ln -s ${DIR}/${IN_USE_DIR}/.zshrc ~/.zshrc
+ln -s ${DIR}/${IN_USE_DIR}/.ideavimrc ~/.ideavimrc
 
 touch ~/.zshrc.currentenv
 

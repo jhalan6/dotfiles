@@ -1,0 +1,45 @@
+set nu
+set rnu
+"
+set hlsearch
+set clipboard=unnamed
+"j 能到达的光标位置距离底端的行数。避免通过ij定位时光标到最上面或者最下面
+set so=7
+
+""" Map leader to space ---------------------
+let mapleader=" "
+
+""" Plugins  --------------------------------
+set surround
+set multiple-cursors
+set commentary
+set argtextobj
+set easymotion
+set textobj-entire
+set ReplaceWithRegister
+
+""" Plugin settings -------------------------
+let g:argtextobj_pairs="[:],(:),<:>"
+
+""" Common settings -------------------------
+set showmode
+set so=5
+set incsearch
+set nu
+
+""" Idea specific settings ------------------
+set ideajoin
+set ideastatusicon=gray
+set idearefactormode=keep
+
+""" Mappings --------------------------------
+map <leader>r :action RenameElement<CR>
+map <leader>z :action ToggleDistractionFreeMode<CR>
+
+map <leader>s :action SelectInProjectView<CR>
+map <leader>a :action Annotate<CR>
+map <leader>h :action Vcs.ShowTabbedFileHistory<CR>
+map <S-Space> :action GotoNextError<CR>
+
+map <leader>o :action FileStructurePopup<CR>
+map <leader>/ :action CommentByLineComment<CR>
